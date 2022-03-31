@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.myc.Employee" table = "emp">
+      
+      <meta attribute = "class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name = "eo" type = "int" column = "empno">
+        
+      </id> 
+      
+      <property name = "ename" column = "ename" type = "string"/>
+      <property name = "sal" column = "sal" type = "int"/>
+      
+   </class>
+</hibernate-mapping>
